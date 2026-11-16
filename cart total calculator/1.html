@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Shopping Cart</title>
+<style>
+body {
+    font-family: Arial;
+    background: #f0f2f5;
+    padding: 30px;
+}
+.container {
+    max-width: 550px;
+    margin: 40px auto;
+    padding: 25px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px #ccc;
+    text-align: center;
+}
+h2 { color: #34495e; }
+select, input {
+    padding: 10px;
+    margin: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    padding: 10px 15px;
+    margin: 5px;
+    background: #34495e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover { background: #2c3e50; }
+table {
+    width: 100%;
+    margin-top: 20px;
+    border-collapse: collapse;
+}
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+th { background: #34495e; color: white; }
+tr:nth-child(even) { background: #f2f2f2; }
+#result { margin-top: 20px; font-weight: bold; }
+</style>
+</head>
+<body>
+<div class="container">
+<h2>Shopping Cart Calculator</h2>
+<label>Item:</label>
+<select id="item">
+<option value="60000">Laptop (₹60,000)</option>
+<option value="800">Mouse (₹800)</option>
+<option value="1500">Keyboard (₹1,500)</option>
+<option value="2500">Headphones (₹2,500)</option>
+<option value="12000">Monitor (₹12,000)</option>
+</select><br>
+<label>Quantity:</label>
+<input type="number" id="qty" min="1" placeholder="Quantity"><br>
+<button onclick="addToCart()">Add to Cart</button>
+<button onclick="calculateBill()">Calculate Bill</button>
+<button onclick="clearCart()">Clear Cart</button>
+<table>
+<thead><tr><th>Item</th><th>Price</th><th>Qty</th><th>Total</th></tr></thead>
+<tbody id="cartTable"></tbody>
+</table>
+<div id="result"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
