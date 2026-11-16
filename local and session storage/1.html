@@ -1,0 +1,59 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Theme Settings</title>
+<style>
+body {
+    font-family: Arial;
+    background: #f0f2f5;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+.container {
+    width: 500px;
+    padding: 30px;
+    background: white;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px #ccc;
+}
+h1 { color: #34495e; }
+select, button {
+    padding: 10px 15px;
+    margin: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button {
+    background: #34495e;
+    color: white;
+}
+button:hover { background: #2c3e50; }
+body.dark { background: #222; color: white; }
+body.dark .container { background: #333; }
+body.dark h1 { color: white; }
+#message { font-weight: bold; margin-top: 20px; }
+</style>
+</head>
+<body>
+<div class="container">
+<h1>Theme Settings</h1>
+<p>Select your preferred theme:</p>
+<select id="themeSelect">
+<option value="light">Light</option>
+<option value="dark">Dark</option>
+</select><br>
+<button onclick="saveLocalStorage()">Save Local Storage</button>
+<button onclick="saveSessionStorage()">Save Session Storage</button><br>
+<button onclick="clearPreferences()">Clear Preferences</button>
+<p id="message"></p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
