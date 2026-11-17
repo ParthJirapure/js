@@ -3,26 +3,64 @@
 <html>
 <head>
 <title>String Functions and Regex</title>
+<style>
+body {
+    font-family: Arial;
+    background: #f2f2f2;
+    text-align: center;
+}
+h1 { color: #333; }
+.box {
+    background: white;
+    width: 70%;
+    margin: 15px auto;
+    padding: 15px;
+    border: 1px solid #ccc;
+}
+h2 { color: #444; }
+input, textarea {
+    width: 80%;
+    padding: 8px;
+    margin: 8px;
+}
+button {
+    background: steelblue;
+    color: white;
+    padding: 8px 15px;
+    border: none;
+    cursor: pointer;
+}
+p { color: #333; }
+</style>
 </head>
 <body>
 
 <h1>String Functions and Regular Expressions</h1>
 
+<div class="box">
 <h2>1. Email Validation</h2>
 <input type="text" id="email" placeholder="Enter Email">
+<br>
 <button onclick="validateEmail()">Validate Email</button>
 <p id="emailResult"></p>
+</div>
 
+<div class="box">
 <h2>2. Data Extraction</h2>
-<textarea id="text" placeholder="Enter text"></textarea><br>
+<textarea id="text" placeholder="Enter text"></textarea>
+<br>
 <button onclick="extractEmails()">Extract Emails</button>
 <button onclick="extractPhones()">Extract Phones</button>
 <p id="extractResult"></p>
+</div>
 
+<div class="box">
 <h2>3. Text Analysis</h2>
-<textarea id="analysisText" placeholder="Enter text"></textarea><br>
+<textarea id="analysisText" placeholder="Enter text"></textarea>
+<br>
 <button onclick="analyzeText()">Analyze Text</button>
 <p id="analysisResult"></p>
+</div>
 
 <script src="script.js"></script>
 </body>
