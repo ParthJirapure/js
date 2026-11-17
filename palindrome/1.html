@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Palindrome Checker</title>
+<style>
+body {
+    font-family: Arial;
+    background: #f0f2f5;
+    padding: 30px;
+}
+.container {
+    max-width: 450px;
+    margin: 50px auto;
+    padding: 25px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px #ccc;
+    text-align: center;
+}
+h2 { color: #34495e; }
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 15px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+button {
+    width: 100%;
+    padding: 12px;
+    background: #34495e;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+button:hover { background: #2c3e50; }
+#result, #count {
+    margin-top: 15px;
+    font-weight: bold;
+}
+</style>
+</head>
+<body>
+<div class="container">
+<h2>Palindrome Checker</h2>
+<input type="text" id="text" placeholder="Enter a word or sentence">
+<button onclick="checkPalindrome()">Check</button>
+<p id="result"></p>
+<p id="count"></p>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
