@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Internal JavaScript</title>
+
+    <style>
+        body{
+            margin:0;
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            background:linear-gradient(135deg,#4facfe,#00f2fe);
+            font-family:Arial,sans-serif;
+        }
+
+        .box{
+            text-align:center;
+            background:white;
+            padding:30px;
+            border-radius:15px;
+            box-shadow:0 0 15px rgba(0,0,0,0.3);
+        }
+
+        h1{color:#0d47a1;}
+        h2{color:#e91e63;}
+
+        p{
+            color:#2e7d32;
+            font-size:20px;
+            font-weight:bold;
+        }
+
+        button{
+            margin-top:20px;
+            padding:12px 25px;
+            border:none;
+            border-radius:8px;
+            background:#1565c0;
+            color:white;
+            font-size:18px;
+            cursor:pointer;
+        }
+
+        button:hover{
+            background:#0d47a1;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="box">
+    <h1>Internal JavaScript Example</h1>
+    <h2>Student Details</h2>
+
+    <p>Name : Parth Jirapure</p>
+    <p>PRN : 24070521243</p>
+    <p>Semester : 5th</p>
+    <p>Section : D</p>
+
+    <button onclick="showMessage()">Click Here</button>
+</div>
+
+<script>
+    function showMessage() {
+        console.log("Server Environment : Development");
+        console.log("Welcome Parth Jirapure!");
+    }
+</script>
+
+</body>
+</html>
