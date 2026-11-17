@@ -1,0 +1,141 @@
+Experiment – 1
+
+Aim:-
+To demonstrate JavaScript integration methods (internal, inline, and external) in a web page and use console functions to display the user's environment information and a welcome message. Also, to understand the concepts of Internal CSS, Inline CSS, and External CSS for styling web pages.
+
+Theory:-
+JavaScript is a client-side scripting language used to make web pages interactive and dynamic. It can be integrated into an HTML document in three ways:
+
+Internal JavaScript: The JavaScript code is written inside the <script> tag within the HTML file. It is suitable for small projects or page-specific scripts.
+Inline JavaScript: The JavaScript code is written directly inside HTML elements using event attributes such as onclick, onmouseover, etc. It is useful for simple actions but is not recommended for large applications.
+External JavaScript: The JavaScript code is stored in a separate .js file and linked to the HTML document using the <script src="..."></script> tag. This improves code reusability, readability, and maintenance.
+Similarly, CSS (Cascading Style Sheets) is used to style web pages and can be applied in three ways:
+Inline CSS: Styles are applied directly to an HTML element using the style attribute.
+Internal CSS: Styles are written inside the <style> tag within the HTML document and apply to that page only.
+External CSS: Styles are written in a separate .css file and linked to the HTML document using the <link> tag. This is the most efficient and widely used method for styling multiple web pages.
+
+Experiment – 2
+
+Aim:-
+To demonstrate JavaScript integration methods (internal, inline, and external) in a web page and use console functions to display the user's environment information and a welcome message. Also, to understand the concepts of Internal CSS, Inline CSS, and External CSS for styling web pages.
+
+Theory:-
+This program demonstrates the use of JavaScript variables (var, let, and const), template literals, and object destructuring. The user enters customer details, product name, quantity, and price per item using prompt(). The program calculates the total amount, GST (18%), and the final bill. The result is displayed dynamically on the web page using document.write().
+
+Experiment – 3
+
+Aim:-
+Implement control structures and form validation; create a grading system based on user-entered marks
+
+Theory:-
+This program demonstrates the use of JavaScript control structures such as while loops, for loops, and if-else statements along with regular expressions for input validation. The user enters the student's name, PRN, number of subjects, subject names, and marks through prompt() dialogs. The program validates the PRN, subject count, and marks to ensure correct input. It then calculates the total marks, percentage, and assigns a grade based on the percentage obtained.
+
+Experiment – 4
+
+Aim:-
+Use function types, scope, and closures; apply try-catch; build a palindrome checker. 
+
+Theory:-
+Functions are reusable blocks of code that perform specific tasks. They can be declared in different ways, such as named functions, anonymous functions, arrow functions, and immediately invoked function expressions (IIFEs). Function types improve code modularity, readability, and reusability.
+
+Scope defines the accessibility of variables in a program. Variables may have global scope, function scope, or block scope. Proper use of scope prevents naming conflicts and protects data from unintended modification.
+
+A closure is created when an inner function retains access to the variables of its outer function even after the outer function has finished execution. Closures are useful for data encapsulation, maintaining state, and implementing private variables.
+
+Exception handling using try-catch allows a program to detect and handle runtime errors gracefully. The try block contains code that may generate an exception, while the catch block handles the error without terminating the program unexpectedly.
+
+A palindrome checker determines whether a string or number reads the same forwards and backwards. The process generally involves removing unnecessary characters (such as spaces and punctuation), converting the text to a common case, reversing it, and comparing it with the original string. If both match, the input is identified as a palindrome.
+
+Experiment – 5
+
+Aim:-
+Apply array methods and object handling; create a cart total calculator with discount logic. 
+
+Theory:-
+A cart total calculator in JavaScript can be implemented using arrays, objects, and array methods to manage products and calculate the final payable amount. Each product can be represented as an object containing properties such as product name, price, and quantity. An array stores all the product objects in the shopping cart.
+
+Array methods make the calculation simpler and more efficient:-
+
+map() can be used to calculate the subtotal of each product by multiplying its price by its quantity.
+reduce() can calculate the total cart value by adding all product subtotals.
+filter() can be used to identify products or conditions that meet specific requirements, if needed.
+Object handling allows individual product details to be accessed and modified using properties such as price, quantity, and name.
+Conditional statements can implement discount logic. For example, a percentage discount can be applied when the cart total exceeds a specified amount.
+The final amount is calculated by subtracting the discount from the original cart total.
+
+A typical calculation is:
+
+Subtotal = Σ (Product Price × Quantity)
+
+If the subtotal satisfies the discount condition:
+
+Discount = Subtotal × Discount Rate
+
+Final Total = Subtotal − Discount
+
+Experiment – 6
+
+Aim:-
+Use string functions and regex for email validation, data extraction, and text analysis. 
+
+Theory:-
+String functions are used to manipulate and analyze text data, while regular expressions (Regex) are patterns used to search, match, validate, and extract specific information from strings. In this experiment, both techniques are applied to perform three important operations.
+1. Email Validation:
+A regular expression is used to check whether an entered email address follows a valid format. A typical pattern verifies the username, the @ symbol, the domain name, and the domain extension. For example, an address such as parthjirapure@gmail.com matches the required pattern and is considered valid.
+2. Data Extraction:
+Regex can identify specific types of information within a larger text. In this experiment, regular expressions are used to extract email addresses and phone numbers from the given paragraph. Methods such as match(), matchAll(), or replace() can be combined with Regex patterns to locate the required data efficiently.
+3. Text Analysis:
+String functions can be used to calculate the number of characters, words, and sentences in a text. Functions such as length, split(), toUpperCase(), and toLowerCase() help process the text. The experiment also converts the input into uppercase and lowercase forms, demonstrating basic string transformation and analysis.
+
+Experiment – 7
+
+Aim:-
+Perform DOM traversal and updates; develop a to-do list app with add, edit, and delete features.
+
+Theory:-
+The Document Object Model (DOM) is a programming interface that represents an HTML document as a tree of elements. JavaScript can use the DOM to access, traverse, modify, create, and delete HTML elements dynamically. DOM manipulation makes web pages interactive by allowing their content and appearance to change in response to user actions without reloading the page.
+
+In this experiment, DOM traversal and manipulation are used to develop an interactive **To-Do List application**. The application allows the user to add new tasks, edit existing tasks, delete unwanted tasks, and mark tasks as completed. JavaScript is used to select HTML elements, create new elements, update their content, and remove elements from the document.
+
+Event handling is used to detect actions such as clicking the **Add, Edit, Delete, and Check** buttons. When a task is completed, a visual change such as a strikethrough is applied to indicate its completed status. The user can also modify tasks whenever required, making the application simple and flexible to use.
+
+This experiment demonstrates how DOM methods and JavaScript event handling can work together to create a dynamic and user-friendly web application. It provides practical understanding of how webpage elements can be controlled and updated based on user interaction.
+
+Experiment – 8
+
+Aim:-
+Access and validate form fields using events; design a gym admission form with live input checks.
+
+Theory:-
+The Document Object Model (DOM) is a programming interface that represents an HTML document as a tree of elements. JavaScript can use the DOM to access, modify, and validate HTML elements dynamically. DOM manipulation allows web pages to respond to user actions without reloading the page.
+
+In this experiment, DOM manipulation and event handling are used to develop an interactive Gym Admission Form. The form collects details such as the user's Full Name, Email, Mobile Number, Age, and Membership Plan. JavaScript is used to access these form fields and check whether the entered information is valid.
+
+Event handling is used to detect user actions such as entering data, changing values, leaving fields, and submitting the form. Live validation displays appropriate error messages when invalid data is entered. For example, the name must contain at least 3 characters, the mobile number must contain exactly 10 digits, and the age must be between 16 and 80.
+
+This experiment demonstrates how DOM methods, JavaScript events, and form validation work together to create a dynamic and user-friendly web form. It provides practical understanding of how form elements can be accessed, validated, and updated based on user interaction.
+
+Experiment – 9
+
+Aim:-
+Implement localStorage and sessionStorage to save user preferences like theme settings.
+
+Theory:-
+The Web Storage API provides a simple way to store data in a user's web browser using key-value pairs. It allows JavaScript to save information on the client side without requiring a server or database. The two main storage mechanisms provided by the browser are localStorage and sessionStorage.
+In this experiment, localStorage and sessionStorage are used to implement a Theme Settings page that allows the user to select and save a preferred Light or Dark theme. JavaScript is used to access the selected theme and store the preference in the browser's storage.
+The localStorage mechanism is used when the user wants the selected theme to remain saved even after closing or reopening the webpage. The selected theme is stored using methods such as setItem() and can later be retrieved using getItem(). This makes localStorage suitable for storing permanent user preferences such as theme, language, or display settings.
+The sessionStorage mechanism is used to store the selected theme temporarily during the current browser session. The preference remains available while the session is active but is removed when the browser tab or session is closed. This makes sessionStorage useful for temporary user settings that do not need to be remembered permanently.
+The experiment also provides a Clear Preferences option to remove the stored theme settings. JavaScript uses methods such as removeItem() or clear() to delete the stored information. A status message is displayed on the page to indicate whether the theme was saved using localStorage, sessionStorage, or whether the preferences were cleared.
+This experiment demonstrates how browser storage, JavaScript, and DOM manipulation can work together to maintain user preferences. It provides practical understanding of how data can be stored, retrieved, and removed on the client side, and how persistent and temporary storage differ in web applications.
+
+Experiment – 10
+
+Aim:-
+Load and display JSON data using fetch() and jQuery $.getJSON(); render results dynamically in a table. 
+
+Theory:-
+The JSON (JavaScript Object Notation) is a lightweight and widely used data-interchange format for storing and transferring structured data. It represents information in the form of key-value pairs and arrays, making it easy for both humans and web applications to read and process. JSON is commonly used in web applications to exchange data between a client and a server.
+In this experiment, JSON data is loaded and displayed dynamically in an HTML table using two different methods: the JavaScript fetch() API and the jQuery $.getJSON() method. The webpage contains buttons that allow the user to load student details such as ID, Name, and Email from a JSON file.
+The fetch() API is a modern JavaScript feature used to make HTTP requests and retrieve resources such as JSON files. It returns a Promise that can be handled using .then() and .catch(). The response.json() method is used to convert the received JSON data into a JavaScript object or array. The data can then be processed using JavaScript and dynamically inserted into the HTML table.
+The jQuery $.getJSON() method provides a simple way to retrieve JSON data from a specified file or URL using an HTTP GET request. It automatically parses the JSON response and passes the resulting data to a callback function. The retrieved student information can then be used to create table rows and display the data on the webpage.
+The experiment also demonstrates DOM manipulation, where JavaScript is used to create or update HTML elements dynamically based on the retrieved JSON data. Instead of writing every student record directly in the HTML code, the records are generated from the JSON file at runtime. This makes the webpage more flexible and easier to update, because apparently humans eventually discovered that copying four rows of data by hand is not a sustainable software architecture.
